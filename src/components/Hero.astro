@@ -2,6 +2,11 @@
 // src/components/Hero.astro
 ---
 
+---
+const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com';
+---
+
+
 <section class="hero">
   <div class="hero__content">
     <span class="hero__eyebrow">Cloud Security • AI Security • Kubernetes</span>
@@ -25,8 +30,9 @@
       </a>
 
       <a
-        href="https://github.com/YOUR_GITHUB_USERNAME"
+        href="https://github.com/sn0rlaxlife"
         target="_blank"
+        rel="noopener noreferrer"
         class="btn btn-secondary"
       >
         GitHub →
